@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/cfagudelo96/advent2022/day2"
+	"github.com/cfagudelo96/advent2022/day3"
 )
 
 func main() {
@@ -13,11 +13,11 @@ func main() {
 }
 
 func run() error {
-	in, err := day2.ReadInput(false)
+	in, err := day3.ReadInput(false)
 	if err != nil {
 		return fmt.Errorf("reading input for problem: %w", err)
 	}
-	r := day2.TotalCorrectScore(in)
+	r := day3.SumOfPriorities(in)
 	fmt.Println(r)
 	return nil
 }
